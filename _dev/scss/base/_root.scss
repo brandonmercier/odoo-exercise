@@ -1,0 +1,11 @@
+:root {
+	--header-height: 60px;
+
+	@include media-breakpoint-up(md) {
+		--header-height: 92px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		--header-height: 0;
+	}
+}

@@ -1,0 +1,58 @@
+.accordion {
+	&__bellow {
+		background: $white;
+		box-shadow: $box-shadow;
+		border-radius: $border-radius;
+		border: 1px solid rgba($border-color,.5);
+		border-bottom: none;
+		padding: 1em 1.5em;
+	}
+
+	&__bellow + &__bellow {
+		margin-top: map-get($spacers,2);
+	}
+
+	&__bellow-toggle {
+		position: relative;
+		display: flex;
+		align-items: baseline;
+		width: 100%;
+		font-weight: $font-weight-semibold;
+		color: $headings-color;
+		border: none;
+		padding-right: calc(1em + 20px);
+		transition: color $transition-duration-base $transition-ease-base;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+
+		&[aria-expanded="true"] {
+			.icon {
+				display: inline-block;
+				transform: rotate(45deg);
+			}
+		}
+
+		.text {
+			display: flex;
+			align-items: baseline;
+
+			> * {
+				margin-right: .5em;
+			}
+		}
+
+		.icon {
+			position: absolute;
+			top: 0;
+			right: 0;
+			transition: $transition-base;
+		}
+	}
+
+	&__panel-inner {
+		margin-top: 1em;
+	}
+}

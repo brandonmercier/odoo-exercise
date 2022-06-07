@@ -1,0 +1,89 @@
+.footer {
+	color: gray('500');
+
+	&.diagonal-box {
+		padding-bottom: 0; // Remove skewed padding at the end of the page
+	}
+
+	a:not(.btn) {
+		color: gray('500');
+		transition: color $transition-duration-base $transition-ease-base;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+	}
+
+	&__baseline {
+		font-size: rem(28);
+		color: gray('200');
+
+		small {
+			display: block;
+			font-size: rem(18);
+			margin-top: .4em;
+		}
+	}
+
+	&__actions {
+		gap: 1rem;
+	}
+
+	&__main {
+		position: relative;
+
+		&:before,
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: linear-gradient(to right, theme-color('dark') 10%, rgba($white,.2) 30%, rgba($white,.2) 70%, theme-color('dark') 90%);
+			position: absolute;
+		}
+
+		&:before {
+			top: 0;
+		}
+
+		&:after {
+			bottom: 0;
+		}
+	}
+
+		&__branding-description {
+			margin: 2em 0;
+		}
+
+		&__branding-description,
+		&__menu-list {
+			font-size: rem(15);
+		}
+
+		&__menu {}
+			&__menu-title {
+				display: block;
+				font-weight: $font-weight-semibold;
+				color: $white;
+				margin-bottom: 1em;
+			}
+
+			&__menu-list {
+				li {
+					margin-top: .5em;
+				}
+			}
+
+	&__networks,
+	&__legals ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2em;
+	}
+
+	&__bottom {
+		font-size: rem(12);
+	}
+}

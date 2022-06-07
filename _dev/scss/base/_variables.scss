@@ -1,0 +1,117 @@
+// Color system
+$blue:          #0389FF;
+$indigo:        #151448;
+$yellow:        #FEBD3D;
+$cyan:          #5CC9A6;
+$black:         #000000;
+
+$body-bg:       white;
+$body-color:    #717F96;
+
+$theme-colors: (
+    "primary": $blue,
+    "secondary": $yellow,
+    "tertiary": $cyan,
+    "dark": $indigo
+);
+
+$primary-zebra: #F9FBFE;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$rem-base:                  1rem;
+$font-family-sans-serif:    'source-sans', Helvetica, Arial, sans-serif;
+$font-family-icons:         'bootstrap-icons';
+$font-weight-semibold:      600; 
+$display1-size:             3.4rem;
+
+$headings-color:            #162A59;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 2rem;
+$spacers: ( 
+    6: ($spacer * 4), 
+    7: ($spacer * 5),
+    8: ($spacer * 6.25),
+    9: ($spacer * 7.5),
+    10: ($spacer * 9.375)
+);
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius:             .5rem;
+$border-radius-lg:          .75rem;
+
+$box-shadow:                0 0 1rem rgba($black,.07);
+$transition-duration-base:  .4s;
+$transition-ease-base:      ease-in-out;
+$transition-base:           all $transition-duration-base $transition-ease-base;
+
+// Buttons
+$btn-border-radius-lg:      $border-radius;
+$btn-padding-x-lg:          1.5em;
+$btn-padding-y-lg:          1em;
+$btn-font-size-lg:          1rem;
+$btn-font-weight:           $font-weight-semibold;
+
+// Progress bars
+$progress-height:           4px;
+$progress-box-shadow:       none;
+$progress-bar-bg:           $yellow;
+
+// Badges
+$badge-padding-y:           .6em;
+$badge-padding-x:           1em;
+$badge-border-radius:       2em;
+
+// Icons
+//
+// Define all variable icons for the subset of Bootstrap Icons exported
+$bi-book:                   "\e900";
+$bi-facebook:               "\e901";
+$bi-instagram:              "\e902";
+$bi-dribbble:               "\e903";
+$bi-github:                 "\e904";
+$bi-folder:                 "\e905";
+$bi-unlock:                 "\e906";
+$bi-file-earmark:           "\e907";
+$bi-star:                   "\e908";
+$bi-arrow-right:            "\e909";
+$bi-eye:                    "\e90a";
+$bi-paperclip:              "\e90b";
+$bi-heart:                  "\e90c";
+$bi-check:                  "\e90d";
+$bi-play:                   "\e90e";
+$bi-plus:                   "\e90f";
+$bi-chevron-right:          "\e910";
+$bi-bag:                    "\e911";
+
+$icons: (
+    'book': $bi-book,
+    'facebook': $bi-facebook,
+    'instagram': $bi-instagram,
+    'dribbble': $bi-dribbble,
+    'github': $bi-github,
+    'folder': $bi-folder,
+    'unlock': $bi-unlock,
+    'file-earmark': $bi-file-earmark,
+    'star': $bi-star,
+    'arrow-right': $bi-arrow-right,
+    'eye': $bi-eye,
+    'paperclip': $bi-paperclip,
+    'heart': $bi-heart,
+    'check': $bi-check,
+    'play': $bi-play,
+    'plus': $bi-plus,
+    'chevron-right': $bi-chevron-right,
+    'bag': $bi-bag
+);

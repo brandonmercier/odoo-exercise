@@ -1,0 +1,85 @@
+.btn {
+	&--has-icon-left [class^="bi-"] {
+		margin-right: .5em;
+	}
+
+	&--has-icon-right [class^="bi-"] {
+		margin-left: .5em;
+	}
+}
+
+.btn-icon {
+	transition: $transition-base;
+	font-weight: $font-weight-semibold;
+
+	&:hover,
+	&:focus {
+		color: theme-color('primary');
+	}
+}
+
+.btn-link.learn-more {
+	display: inline-block;
+	font-weight: $font-weight-semibold;
+	text-decoration: none;
+	transition: $transition-base;
+
+	.btn-label {
+		position: relative;
+
+		&:after {
+			position: absolute;
+			top: calc(100% + .25em);
+			left: 0;
+			content: '';
+			width: 100%;
+			height: 2px;
+			border-radius: 2px;
+			background: currentColor;
+			transition: $transition-base;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		.btn-label:after { transform: translateY(-.15em); }
+	}
+}
+
+.button-store {
+	$logo-size: 36px;
+
+	background-color: black;
+	border-color: black;
+	font-weight: $font-weight-semibold;
+	text-align: left;
+	padding: $btn-padding-y*1.5 $btn-padding-x-lg*.5 $btn-padding-y*1.5 calc(#{$btn-padding-x-lg*.5} + #{$logo-size} + .5em);
+	line-height: 1.2;
+	font-size: rem(22);
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: calc($btn-padding-y*1.5 + .1em); 
+		left: $btn-padding-x-lg*.5;
+		width: $logo-size;
+		height: $logo-size;
+		background: no-repeat 0 0 / 100% auto;
+	}
+
+	&--apple:before {
+		background-image: url('#{$images_path}/logos/apple-white.svg');
+	}
+
+	&--google:before {
+		background-image: url('#{$images_path}/logos/google-play-white.svg');
+	}
+
+	span {
+		font-size: .6em;
+		display: block;
+		font-weight: $font-weight-normal;
+	}
+}

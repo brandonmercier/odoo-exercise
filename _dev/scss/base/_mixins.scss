@@ -1,0 +1,75 @@
+/**
+ * Generates a complete font face declarations
+ * where invoked
+ *
+ * @type mixin
+ *
+ * @param $font-family The with which the font family will be called
+ * @param $fonts-path   The path to the fonts directory relative to the compiled stylesheet
+ * @param $font-file   The name of the actual font file
+ * @param $font-weight The font weight (normal, bold, lighter)
+ * @param $font-weight The font style (normal, italic)
+ *
+ * Example Usage:
+ * @include font-face('Open Sans', '../fonts/', 'OpenSans-regular-webfont', bold, italic)
+ */
+@mixin font-face( $font-family, $fonts-path, $font-file, $font-weight: normal, $font-style: normal, $support: 'modern', $unicode-range: '' ) {
+    $font-folder: '/' + str-replace( to-lower-case( $font-family ) , ' ', '-' ) + '/';
+    $file-path: $fonts-path + $font-folder + $font-file;
+    @font-face {
+        font-family: $font-family;
+        font-weight: $font-weight;
+        font-style: $font-style;
+
+        @if ( $support == 'oldie' ) {
+            src: url('#{$file-path}.eot');
+            src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+            url('#{$file-path}.woff2') format('woff2'),
+            url('#{$file-path}.woff') format('woff'),
+            url('#{$file-path}.ttf') format('truetype');
+        }
+
+        @if ( $support == 'recent' ) {
+            src: url('#{$file-path}.woff2') format('woff2'),
+            url('#{$file-path}.woff') format('woff'),
+            url('#{$file-path}.ttf') format('truetype');
+        }
+
+        @if ( $support == 'modern' ) {
+            src: url('#{$file-path}.woff2') format('woff2'),
+            url('#{$file-path}.woff') format('woff');
+        }
+
+        @if ( $support == 'woff2' or $support == 'woff' ) {
+            src: url('#{$file-path}.#{$support}') format($support);
+        }
+
+        @if ( $unicode-range != '' ) {
+            unicode-range: $unicode-range;
+        }
+    }
+}
+
+/**
+ * A loop to run through each font family
+ * and print the font face declarations of each
+ * variant
+ *
+ * Dependencies
+ * variable - $fonts-path
+ * list     - $font-faces
+ * mixin    - font-face
+ */
+@mixin fonts-declarations( $font-faces ) {
+    @each $font-family, $font-variants in $font-faces {
+        @each $variant in $font-variants {
+            $fonts-path: $fonts-path !global;
+            $font-file: nth($variant, 1);
+            $font-weight: nth($variant, 2);
+            $font-style: nth($variant, 3);
+            $support: nth($variant, 4);
+            $unicode-range: nth($variant, 5);
+            @include font-face($font-family, $fonts-path, $font-file, $font-weight, $font-style, $support, $unicode-range );
+        }
+    }
+}

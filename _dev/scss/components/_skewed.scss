@@ -1,0 +1,87 @@
+/*
+* Diagonal layout (for gradient or plain background)
+* @author Nils Binder
+* @see https://9elements.com/blog/pure-css-diagonal-layouts/
+*/
+
+:root {
+    --width: 100vw;
+    --angle: -3deg;
+    /*-----------------
+    Magic Number Alert:
+    
+    the 0.0262039 is calculated by this formula:
+    tan(3°) / 2
+    11° is the current skewY value.
+    ------------------*/
+    --magic-number: 0.0262039;
+    --skew-padding: calc(var(--width) * var(--magic-number));
+}
+
+$diagonal-colors: map-merge(
+    (
+        "white": white,
+        "zebra": $primary-zebra
+    ), $theme-colors
+);
+
+.diagonal-box {
+    position: relative;
+    padding: var(--skew-padding) 0;
+    margin-top: -1px;
+
+    &--plain-top:after,
+    &--plain-bottom:after,
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+    
+    &:before {
+        top: 0;
+        bottom: 0;
+        transform: skewy(var(--angle));
+        transform-origin: 50% 0;
+        outline: 1px solid transparent;
+        backface-visibility: hidden;
+    }
+
+    &--plain-top:after {
+        top: 0;
+        height: calc(var(--skew-padding) * 2);
+        transform: translateY(-50%);
+    }
+
+    &--plain-bottom:after {
+        bottom: 0;
+        height: var(--skew-padding);
+    }
+
+    @each $theme, $color in $diagonal-colors {
+        &--bg-#{$theme} {
+            &:before,
+            &:after {
+                background-color: $color;
+            }
+        }
+    }
+}
+
+.diagonal-box-overlap {
+    &--start .diagonal-box {
+        padding-top: 0;
+    }
+
+    &--end {
+        overflow: hidden;
+        padding-top: calc(var(--skew-padding) * 1.1);
+
+        .diagonal-box {
+            padding-bottom: 0;
+        }
+    }
+}

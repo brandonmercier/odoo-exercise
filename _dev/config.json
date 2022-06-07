@@ -1,0 +1,6 @@
+{
+    "path" : {
+        "bourbon" : "node_modules/bourbon/core",
+        "bootstrap" : "node_modules/bootstrap/scss"
+    }
+}

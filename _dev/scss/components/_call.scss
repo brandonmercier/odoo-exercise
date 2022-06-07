@@ -1,0 +1,32 @@
+.call {
+	--radius: #{$border-radius-lg*3};
+
+	display: flex;
+	flex-wrap: wrap;
+	
+	gap: $grid-gutter-width;
+	background: theme-color('dark');
+	color: white;
+
+	padding: var(--radius);
+
+	border-radius: 0 var(--radius) 0  var(--radius);
+
+	&__title {
+		color: currentColor;
+	}
+
+	@include media-breakpoint-up(lg) {
+		--radius: #{$border-radius-lg*6};
+
+		align-items: center;
+
+		&__text {
+			max-width: 450px;
+		}
+
+		&__action {
+			margin-left: auto;
+		}
+	}
+}

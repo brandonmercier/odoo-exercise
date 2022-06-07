@@ -1,0 +1,53 @@
+.flickity-button {
+    transition: opacity $transition-duration-base $transition-ease-base;
+    box-shadow: $box-shadow;
+    font-size: rem(18);
+    outline: none;
+    background: theme-color("primary");
+    
+    &:disabled,
+    &:disabled:focus {
+        opacity: 0 !important;
+        pointer-events: none;
+    }
+
+    &:before {
+        color: white;
+    }
+
+    .flickity-button-icon { display: none; }
+
+    &:hover,
+    &:focus {
+        opacity: .8;
+        background: theme-color-level("primary",1);
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &.flickity-prev-next-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $font-family-icons;
+
+        &:before {
+            display: block;
+            content: $bi-chevron-right;
+        }
+
+        &.next {
+            &:before {
+                transform: translateX(.1em);
+            }
+        }
+
+        &.previous {
+            &:before {
+                transform: translateX(-.1em) scaleX(-1);
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.rating {
+	@for $rating from 1 to 6 {
+		&--#{$rating} {
+			@for $index from 1 to $rating + 1 {
+				.rating__icon:nth-child(#{$index}) {
+					color: color('yellow');
+				}
+			}
+		}
+	} 
+}

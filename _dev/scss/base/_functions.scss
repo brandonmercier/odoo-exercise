@@ -1,0 +1,61 @@
+/// Convert pixels to rems
+/// eg. for a relational value of 12px write em(12)
+/// @author Bourbon.io
+/// @param {Integer} $pxval - Initial px value
+/// @param {Integer} $base - Default base value calculation
+/// @return {Integer} - Converted value, from px to em
+@function em($pxval, $base: $em-base) {
+    @if not unitless($pxval) {
+        $pxval: strip-unit($pxval);
+    }
+    @if not unitless($base) {
+        $base: strip-unit($base);
+    }
+
+    @return ( $pxval / $base ) * 1em;
+}
+
+/// Convert pixels to rems
+/// eg. for a relational value of 12px write rem(12)
+/// @author Bourbon.io
+/// @param {Integer} $pxval - Initial px value
+/// @return {Integer} - Converted value, from px to rem
+@function rem($pxval) {
+    @if not unitless($pxval) {
+        $pxval: strip-unit($pxval);
+    }
+
+    $base: 16px;
+    @if not unitless($base) {
+        $base: strip-unit($base);
+    }
+
+    @return ( $pxval / $base ) * 1rem;
+}
+
+@function str-replace($source, $substring, $replacement, $fail-silently: true) {
+    $start: str-index($source, $substring);
+    @if $start {
+        @return str-slice($source, 1, $start - 1)  + $replacement + str-slice($source, $start + str-length($substring))
+    }
+    @if $fail-silently {
+        @return $source;
+    } @else {
+        @error "'#{$substring}' was not found in '#{$source}'";
+    }
+}
+
+@function remove-hexa-prefix( $hexacode ) {
+    @return str-replace( $hexacode, '#', '' );
+}
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

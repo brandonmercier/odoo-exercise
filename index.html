@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/odoo.css">
+    <title>Odoo: Development done right</title>
+</head>
+<body>
+    <div id="site" class="view-home">
+        <div class="diagonal-box-overlap diagonal-box-overlap--start">
+            <div class="diagonal-box diagonal-box--bg-primary diagonal-box--plain-top pb-5">
+                <div class="container">
+                    <header id="site-header" class="header | row py-2 py-md-3 align-items-lg-baseline justify-content-between">
+                        <div class="header__branding | col-6 col-lg">
+                            <a href="#" class="d-inline-block"><img src="assets/images/logos/odoo-white.svg" class="branding-logo" alt="Odoo" /></a>
+                        </div>
+                        <button type="button" class="header__navigation-toggle d-lg-none | js-navigation-toggle">
+                            <span class="burger-icon">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </span>
+                        </button>
+
+                        <nav class="header__navigation | col-lg-6">
+                            <div class="header__navigation-scrollarea">
+                                <ul class="header__menu | list-unstyled">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="#">App</a></li>
+                                    <li><a href="#">Docs</a></li>
+                                </ul>
+                                <div class="header__calls | d-flex justify-content-lg-end">
+                                    <a href="#" class="btn btn-link text-white">Sign in</a>
+                                    <a href="#" class="btn btn-light btn--has-icon-left"><i class="bi-bag"></i> Buy now</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="col-lg"></div>
+                    </header>
+
+                    <section class="introduction | row pt-4 pt-lg-4 align-items-lg-center">
+                        <div class="introduction__text text-white | col-lg-7">
+                            <div class="introduction__main-text">
+                                <h1 class="introduction__title text-white">Development done right</h1>
+                                <div class="introduction__description mt-3">
+                                    <p>Build a beautiful, modern website with flexible components built from scratch.</p>
+                                </div>
+                                <div class="introduction__action mt-3">
+                                    <a href="#" class="btn btn-light btn-lg btn--has-icon-right">Get started <i class="bi-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="introduction__references mt-4">
+                                <span class="label">Trusted by:</span>
+                                <ul class="introduction__references-list | list-unstyled">
+                                    <li><img src="assets/images/logos/google-white.svg" alt="Google" /></li>
+                                    <li><img src="assets/images/logos/spotify-white.svg" alt="Spotify" /></li>
+                                    <li><img src="assets/images/logos/airbnb-white.svg" alt="Airbnb" /></li>
+                                    <li><img src="assets/images/logos/paypal-white.svg" alt="PayPal" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="introduction__card | mt-3 mt-lg-0 col-lg-5 | d-none d-lg-block">
+                            <div class="introduction__card-header card-manager | px-3 py-3">
+                                <div class="card-manager__header">
+                                    <div class="card-manager__title">
+                                        Manage cards
+                                    </div>
+                                    <div class="card-manager__action">
+                                        <a href="#" class="btn btn-sm btn-outline-light text-dark">Add new</a>
+                                    </div>
+                                </div>
+                                <div class="card-manager__content | mt-2">
+                                    <div class="credit-card | text-white px-3 py-3">
+                                        <div class="credit-card__top credit-card__line">
+                                            <img src="assets/images/logos/mastercard.svg" alt="" class="credit-card__provider" />
+                                            <span class="status bg-tertiary">Active</span>
+                                        </div>
+                                        <div class="credit-card__number credit-card__line">
+                                            <div class="label">Card number</div>
+                                            <div class="value">4358 &ndash; 7421 &ndash; 9256 &ndash; 6682</div>
+                                        </div>
+                                        <div class="credit-card__bottom credit-card__line">
+                                            <div class="credit-card__holder">
+                                                <div class="label">Name</div>
+                                                <div class="value">John Snow</div>
+                                            </div>
+                                            <div class="credit-card__holder">
+                                                <div class="label">Expiry date</div>
+                                                <div class="value">11/23</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-manager__expenses">
+                                        <ol class="card-manager__expenses-list | list-unstyled">
+                                            <li>
+                                                <div class="expense">
+                                                    <div class="expense__text">
+                                                        <strong class="expense__title">Starbucks</strong>
+                                                        <div class="expense__information">Pending &ndash; San Fransisco, United States</div>
+                                                    </div>
+                                                    <div class="expense__amount">
+                                                        $5,50 USD
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="expense">
+                                                    <div class="expense__text">
+                                                        <strong class="expense__title">Nike Sports</strong>
+                                                        <div class="expense__information">Pending &ndash; Lisbon, Portugal</div>
+                                                    </div>
+                                                    <div class="expense__amount">
+                                                        $5,50 USD
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                        <a href="#" class="readmore">
+                                            View all <i class="bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <main id="site-content" class="diagonal-box">
+            <section class="reason reason-tools | pt-5 pb-4 pt-lg-5 pb-lg-4">
+                <div class="container-sm">
+                    <div class="row">
+                        <div class="reason-tools__sticky | col-md-6 col-lg-5 order-md-2 offset-lg-1 align-self-lg-center">
+                            <span class="badge bg-secondary text-white">Tools</span>
+                            <h2 class="reason__title">We build for designers and developers</h2>
+                            <div class="reason__description">
+                                <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+                            </div>
+                        </div>  
+                        <div class="reason__visual mt-3 mt-md-0 col-md-6 order-md-1">
+                            <div class="tools">
+                                <div class="video-tile">
+                                    <button type="button" class="btn btn-light btn-sm btn--has-icon-right button-play stretched-link">Play video <i class="bi-play"></i></button>
+                                    <img src="assets/images/pictures/meeting.jpg" alt="Scrum internal meeting" />
+                                </div>
+                                <div class="tools__sheet milestones | box">
+                                    <strong class="milestones__title">Awesome projects</strong>
+                                    <ul class="milestones__list | list-unstyled">
+                                        <li>
+                                            <div class="milestone">
+                                                <div class="milestone__text">
+                                                    <span class="milestone__title">Create the new logo</span>
+                                                    <span class="milestone__duration">3:50</span>
+                                                </div>
+                                                <div class="milestone__progress progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        <li>
+                                            <div class="milestone">
+                                                <div class="milestone__text">
+                                                    <span class="milestone__title">Set up the color palette</span>
+                                                    <span class="milestone__duration">4:00</span>
+                                                </div>
+                                                 <div class="milestone__progress progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        <li>
+                                            <div class="milestone">
+                                                <div class="milestone__text">
+                                                    <span class="milestone__title">Wireframe and prototype</span>
+                                                    <span class="milestone__duration">6:50</span>
+                                                </div>
+                                                <div class="milestone__progress progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reason reason-features | pt-5 pb-4 pt-lg-5 pb-lg-4">
+                <div class="container-sm">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5 align-self-center">
+                            <span class="badge bg-tertiary text-white">Features</span>
+                            <h2 class="reason__title">Get components and examples, including tons of variables that will help you grow your business.</h2>
+                            <div class="reason__description">
+                                <ul class="checklist | list-unstyled text-tertiary">
+                                    <li>
+                                        <span class="checklist__checkbox text-white bg-tertiary">
+                                            <i class="bi-check"></i>
+                                        </span>
+                                        Perfect for modern startups
+                                    </li>
+                                    <li>
+                                        <span class="checklist__checkbox text-white bg-tertiary">
+                                            <i class="bi-check"></i>
+                                        </span>
+                                        Fully customizable and scalable
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
+                        <div class="reason__visual | mt-3 mt-lg-0 col-md-6 offset-lg-1">
+                            <div class="video-tile">
+                                <button type="button" class="btn btn-light btn-sm btn--has-icon-right button-play stretched-link">Play video <i class="bi-play"></i></button>
+                                <img src="assets/images/pictures/coding.jpg" alt="Grow your business" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reason reason-technology | pt-5 pb-4 pt-lg-5 pb-lg-4">
+                <div class="container-sm">
+                    <div class="row">
+                        <div class="reason-technology__sticky | col-md-6 col-lg-5 order-md-2 offset-lg-1 align-self-lg-center">
+                            <span class="badge bg-primary text-white">Technology</span>
+                            <h2 class="reason__title">We use the latest technologies on the market</h2>
+                            <div class="reason__description">
+                                <p>
+                                    Get components and examples, including tons of variables that will help you grow your business.
+                                </p>
+                                <p>
+                                    <a href="#" class="btn-link learn-more"><span class="btn-label">See case studies</span></a>
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="reason__visual | mt-3 mt-md-0 col-md-6 order-md-1">
+                            <div class="row mx-n1">
+                                <div class="col-sm-6 col-md-12 col-lg-6 px-1 mt-2 mt-md-0 mt-lg-2">
+                                    <div class="tile tile-profile box mt-4 mt-md-0 mt-lg-4">
+                                        <div class="tile__picture">
+                                            <img src="assets/images/pictures/person_03.jpg" alt="Jimmmy Hendrix" />
+                                        </div>
+                                        <div class="tile__text">
+                                            <div class="tile__identity profile">
+                                                <div class="profile__avatar">
+                                                    <div class="profile__placeholder">JH</div>
+                                                </div>
+                                                <div class="profile__name tile__highlight">Jimmy Hendrix</div>
+                                            </div>
+                                            <div class="profile__action">
+                                                <button type="button" class="profile__like button-icon | btn btn-sm btn-icon" title="Like Jimmy Hendrix"><i class="bi-heart"></i></button> 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tile tile-components box mt-2">
+                                        <div class="checkmark">
+                                            <i class="bi-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <strong class="tile__highlight">300+ components</strong>
+                                            <small class="small-text d-block">Built to be customized</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-12 col-lg-6 px-1 mt-2 px-md-1 mt-md-2 px-lg-1 mt-lg-2">
+                                    <div class="tile tile-award box text-center">
+                                        <img class="tile-award__logo" src="assets/images/logos/airbnb.svg" alt="Airbnb" />
+                                        <div class="tile-award__rating my-3 rating rating--4">
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                        </div>
+                                        <div class="tile-award__text">
+                                            <strong class="tile-award__rating-description tile__highlight">4.95 out of 5 stars</strong>
+                                            <small class="small-text | d-block">from 23 reviews</small>
+                                        </div>
+                                    </div>
+                                    <div class="tile tile-download box text-center mt-2">
+                                        <div class="tile-download__picture">
+                                            <img class="tile-download__logo" src="assets/images/logos/company.png" alt="Company" />
+                                        </div>
+                                        <strong class="tile-download__title tile__highlight | d-block mt-1">Website UI Kit</strong>
+                                        <div class="tile-download__authors | mt-2">
+                                            <div class="tile-download__author"><img src="assets/images/pictures/person_01.jpg" alt="Jimmy" /></div>
+                                            <div class="tile-download__author"><img src="assets/images/pictures/person_02.jpg" alt="Mary" /></div>
+                                            <div class="tile-download__author"><img src="assets/images/pictures/person_03.jpg" alt="John" /></div>
+                                        </div>
+                                        <div class="tile-download__actions | mt-2 pt-2">
+                                            <button type="button" class="download__file btn btn-sm btn-icon" title="Download this component"><i class="bi-paperclip"></i></button> 
+                                            <button type="button" class="download__view btn btn-sm btn-icon" title="View this component"><i class="bi-eye"></i></button> 
+                                            <button type="button" class="download__like btn btn-sm btn-icon" title="Like this component"><i class="bi-heart"></i></button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reason reason-easy | pt-5 pb-4 pt-lg-5 pb-lg-4">
+                <div class="container-sm">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5 align-self-center">
+                            <span class="badge bg-secondary text-white">Easy to install</span>
+                            <h2 class="reason__title">Download, install and run.</h2>
+                            <div class="reason__description">
+                                <p>
+                                    Get components and examples, including tons of variables that will help you grow your business.
+                                </p>
+                            </div>
+                            <div class="reason__actions mt-4">
+                                <a href="#" class="btn btn-dark button-store button-store--apple"><span>Download on the</span> App Store</a>
+                                <a href="#" class="btn btn-dark button-store button-store--google"><span>Download on the</span> Play Store</a>
+                            </div>
+                        </div>  
+                        <div class="reason__visual | mt-3 mt-lg-0 col-md-6 offset-lg-1">
+                            <div class="video-tile">
+                                <button type="button" class="btn btn-light btn-sm btn--has-icon-right button-play stretched-link">Play video <i class="bi-play"></i></button>
+                                <img src="assets/images/pictures/download.jpg" alt="Happy download" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="call-wrapper | container pt-5 pb-4 mb-5 pt-lg-5 pb-lg-4 mb-lg-5">
+                <div class="call">
+                    <div class="call__text">
+                        <h3 class="call__title">Infinite solutions</h3>
+                        <div class="call__description">
+                            <p>Intuitive markup, powerful and lightning-fast build tools, everything you need to turn your ideas into incredible products.</p>
+                        </div>
+                    </div>
+                    <div class="call__action">
+                        <a href="#" class="btn btn-light btn-lg btn--has-icon-right">Learn more<i class="bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="diagonal-box diagonal-box--bg-zebra diagonal-box--plain-top">
+                <section class="awards | pt-3 pt-lg-3">
+                    <div class="container">
+                        <header class="awards__header">
+                            <span class="badge bg-primary text-white">Awards</span>
+                            <h2 class="awards__title">Awards for design, creativity and innovation on the Internet</h2>
+                        </header>
+                        <div class="awards__content my-lg-4">
+                            <div class="awards-list | js-awards-carousel">
+                                <div class="carousel-cell">
+                                    <a href="#" class="tile tile-award box text-center">
+                                        <img class="tile-award__logo" src="assets/images/logos/airbnb.svg" alt="Airbnb" />
+                                        <div class="tile-award__rating my-3 rating rating--4">
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                        </div>
+                                        <div class="tile-award__text">
+                                            <strong class="tile-award__rating-description tile__highlight">4.95 out of 5 stars</strong>
+                                            <small class="small-text | d-block">from 23 reviews</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="#" class="tile tile-award box text-center">
+                                        <img class="tile-award__logo" src="assets/images/logos/amazon.svg" alt="Amazon" />
+                                        <div class="tile-award__description">
+                                            They build modern looking websites easily using Tabs.
+                                        </div>
+                                        <div class="tile-award__action">
+                                            <span class="btn-link learn-more stretched-link"><span class="btn-label">Learn more</span></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="#" class="tile tile-award box text-center">
+                                        <img class="tile-award__logo" src="assets/images/logos/slack.svg" alt="Slack" />
+                                        <div class="tile-award__description">
+                                            They build modern looking websites easily using Tabs.
+                                        </div>
+                                        <div class="tile-award__action">
+                                            <span class="btn-link learn-more stretched-link"><span class="btn-label">Learn more</span></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="#" class="tile tile-award box text-center">
+                                        <img class="tile-award__logo" src="assets/images/logos/spotify.svg" alt="Spotify" />
+                                        <div class="tile-award__rating my-3 rating rating--4">
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                            <i class="bi-star rating__icon"></i>
+                                        </div>
+                                        <div class="tile-award__text">
+                                            <strong class="tile-award__rating-description tile__highlight">4.95 out of 5 stars</strong>
+                                            <small class="small-text | d-block">from 23 reviews</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="#" class="tile tile-award box text-center">
+                                        <img class="tile-award__logo" src="assets/images/logos/paypal.svg" alt="Paypal" />
+                                        <div class="tile-award__description">
+                                            They build modern looking websites easily using Tabs.
+                                        </div>
+                                        <div class="tile-award__action">
+                                            <span class="btn-link learn-more stretched-link"><span class="btn-label">Learn more</span></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="diagonal-box diagonal-box--bg-white">
+                <section class="faq | pt-5 pb-4 pt-lg-5 pb-lg-4">
+                    <div class="container">
+                        <header class="faq__header mx-auto text-center">
+                            <h2 class="faq__title">Helpful answers</h2>
+                            <p class="faq_subtitle">Start building fast, beautiful, and modern-looking websites in no time.</p>
+                        </header>
+                        <div class="faq__content mx-auto mt-4">
+                            <div id="faq-accordion" class="accordion | js-accordion">
+                                <div class="accordion__bellow">
+                                    <a 
+                                        class="accordion__bellow-toggle" 
+                                        data-toggle="collapse" 
+                                        href="#panel-1" 
+                                        role="button" 
+                                        aria-expanded="false" 
+                                        aria-controls="panel-1" 
+                                    >
+                                        <span class="text"><i class="bi-file-earmark"></i> Which license do I need?</span>
+                                        <span class="icon"><i class="bi-plus"></i></span>
+                                    </a>
+                                    <div id="panel-1" class="accordion__panel | collapse" data-parent="#faq-accordion">
+                                        <div class="accordion__panel-inner">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus accumsan interdum. Quisque ultrices eleifend pretium. Vestibulum feugiat faucibus lacus ut molestie. Nam a sem in lacus consequat venenatis et eget est. Duis quis aliquet orci. Etiam molestie facilisis metus, finibus fringilla neque mattis vitae. Maecenas mattis ante nunc. Nullam fringilla vel turpis sed iaculis. Suspendisse vel elit scelerisque ipsum placerat rhoncus non nec orci.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__bellow">
+                                    <a 
+                                        class="accordion__bellow-toggle" 
+                                        data-toggle="collapse" 
+                                        href="#panel-2" 
+                                        role="button" 
+                                        aria-expanded="false" 
+                                        aria-controls="panel-2" 
+                                    >
+                                        <span class="text"><i class="bi-unlock"></i> How do I get access to my database?</span>
+                                        <span class="icon"><i class="bi-plus"></i></span>
+                                    </a>
+                                    <div id="panel-2" class="accordion__panel | collapse" data-parent="#faq-accordion">
+                                        <div class="accordion__panel-inner">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus accumsan interdum. Quisque ultrices eleifend pretium. Vestibulum feugiat faucibus lacus ut molestie. Nam a sem in lacus consequat venenatis et eget est. Duis quis aliquet orci. Etiam molestie facilisis metus, finibus fringilla neque mattis vitae. Maecenas mattis ante nunc. Nullam fringilla vel turpis sed iaculis. Suspendisse vel elit scelerisque ipsum placerat rhoncus non nec orci.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__bellow">
+                                    <a 
+                                        class="accordion__bellow-toggle" 
+                                        data-toggle="collapse" 
+                                        href="#panel-3" 
+                                        role="button" 
+                                        aria-expanded="false" 
+                                        aria-controls="panel-3" 
+                                    >
+                                        <span class="text"><i class="bi-folder"></i> How do I see previous orders?</span>
+                                        <span class="icon"><i class="bi-plus"></i></span>
+                                    </a>
+                                    <div id="panel-3" class="accordion__panel | collapse" data-parent="#faq-accordion">
+                                        <div class="accordion__panel-inner">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus accumsan interdum. Quisque ultrices eleifend pretium. Vestibulum feugiat faucibus lacus ut molestie. Nam a sem in lacus consequat venenatis et eget est. Duis quis aliquet orci. Etiam molestie facilisis metus, finibus fringilla neque mattis vitae. Maecenas mattis ante nunc. Nullam fringilla vel turpis sed iaculis. Suspendisse vel elit scelerisque ipsum placerat rhoncus non nec orci.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__bellow">
+                                    <a 
+                                        class="accordion__bellow-toggle" 
+                                        data-toggle="collapse" 
+                                        href="#panel-4" 
+                                        role="button" 
+                                        aria-expanded="false" 
+                                        aria-controls="panel-4" 
+                                    >
+                                        <span class="text"><i class="bi-file-earmark"></i> Which license do I need?</span>
+                                        <span class="icon"><i class="bi-plus"></i></span>
+                                    </a>
+                                    <div id="panel-4" class="accordion__panel | collapse" data-parent="#faq-accordion">
+                                        <div class="accordion__panel-inner">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus accumsan interdum. Quisque ultrices eleifend pretium. Vestibulum feugiat faucibus lacus ut molestie. Nam a sem in lacus consequat venenatis et eget est. Duis quis aliquet orci. Etiam molestie facilisis metus, finibus fringilla neque mattis vitae. Maecenas mattis ante nunc. Nullam fringilla vel turpis sed iaculis. Suspendisse vel elit scelerisque ipsum placerat rhoncus non nec orci.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__bellow">
+                                    <a 
+                                        class="accordion__bellow-toggle" 
+                                        data-toggle="collapse" 
+                                        href="#panel-5" 
+                                        role="button" 
+                                        aria-expanded="false" 
+                                        aria-controls="panel-5"
+                                    >
+                                        <span class="text"><i class="bi-unlock"></i> How do I get access to my database?</span>
+                                        <span class="icon"><i class="bi-plus"></i></span>
+                                    </a>
+                                    <div id="panel-5" class="accordion__panel | collapse" data-parent="#faq-accordion">
+                                        <div class="accordion__panel-inner">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus accumsan interdum. Quisque ultrices eleifend pretium. Vestibulum feugiat faucibus lacus ut molestie. Nam a sem in lacus consequat venenatis et eget est. Duis quis aliquet orci. Etiam molestie facilisis metus, finibus fringilla neque mattis vitae. Maecenas mattis ante nunc. Nullam fringilla vel turpis sed iaculis. Suspendisse vel elit scelerisque ipsum placerat rhoncus non nec orci.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__bellow">
+                                    <a 
+                                        class="accordion__bellow-toggle" 
+                                        data-toggle="collapse" 
+                                        href="#panel-6" 
+                                        role="button" 
+                                        aria-expanded="false" 
+                                        aria-controls="panel-6" 
+                                    >
+                                        <span class="text"><i class="bi-folder"></i> How do I see previous orders?</span>
+                                        <span class="icon"><i class="bi-plus"></i></span>
+                                    </a>
+                                    <div id="panel-6" class="accordion__panel | collapse" data-parent="#faq-accordion">
+                                        <div class="accordion__panel-inner">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus accumsan interdum. Quisque ultrices eleifend pretium. Vestibulum feugiat faucibus lacus ut molestie. Nam a sem in lacus consequat venenatis et eget est. Duis quis aliquet orci. Etiam molestie facilisis metus, finibus fringilla neque mattis vitae. Maecenas mattis ante nunc. Nullam fringilla vel turpis sed iaculis. Suspendisse vel elit scelerisque ipsum placerat rhoncus non nec orci.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="faq-call text-center mt-5 mt-lg-5">
+                                <h3 class="faq-call__title">I want to start a new project</h3>
+                                <div class="faq-call__actions mt-3 mt-lg-3">
+                                    <a href="#" class="btn btn-primary btn-lg btn--has-icon-right">Buy now <i class="bi-arrow-right"></i></a>
+                                    <a href="#" class="btn btn-link btn-lg">Learn more</a>
+                                </div>
+                            </div>                
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="diagonal-box-overlap diagonal-box-overlap--end">
+            <footer id="site-footer" class="footer diagonal-box diagonal-box--bg-dark diagonal-box--plain-bottom">
+                <div class="container">
+                    <div class="footer__top | row pt-4 pb-3">
+                        <div class="footer__baseline | col-lg-6">
+                            Brilliant solutions for your ideas
+                            <small>Modern looking websites.</small>
+                        </div>
+                        <div class="footer__actions | mt-3 mt-lg-0 col-lg-6 d-flex flex-wrap align-items-lg-center justify-content-lg-end">
+                            <a href="#" class="btn btn-light btn-lg btn--has-icon-left"><i class="bi-book text-primary"></i> Documentation</a>
+                            <a href="#" class="btn btn-primary btn-lg">Purchase now</a>
+                        </div>
+                    </div>
+                    <div class="footer__main | row py-3">
+                        <div class="footer__branding | col-lg-4">
+                            <img class="footer__logo | branding-logo" src="assets/images/logos/odoo-white.svg" alt="Odoo" />
+                            <p class="footer__branding-description">
+                                Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.
+                            </p>
+                            <ul class="footer__networks | list-unstyled">
+                                <li><a href="#" class="network" title="View our Dribble"><i class="bi-dribbble"></i></a></li>
+                                <li><a href="#" class="network" title="Get an eye on our Github repositories"><i class="bi-github"></i></a></li>
+                                <li><a href="#" class="network" title="Follow us on Instagram"><i class="bi-instagram"></i></a></li>
+                                <li><a href="#" class="network" title="Follow us on Facebook"><i class="bi-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__navigation | mt-3 mt-lg-0 col-lg-6 offset-lg-2">
+                            <div class="row">
+                                <nav class="footer__menu | col-4">
+                                    <strong class="footer__menu-title">Account</strong>
+                                    <ul class="footer__menu-list | list-unstyled">
+                                        <li><a href="#">Profiles</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Billings</a></li>
+                                        <li><a href="#">Notifications</a></li>
+                                    </ul>
+                                </nav>
+                                <nav class="footer__menu | col-4">
+                                    <strong class="footer__menu-title">About</strong>
+                                    <ul class="footer__menu-list | list-unstyled">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </nav>
+                                <nav class="footer__menu | col-4">
+                                    <strong class="footer__menu-title">Company</strong>
+                                    <ul class="footer__menu-list | list-unstyled">
+                                        <li><a href="#">Community</a></li>
+                                        <li><a href="#">Help center</a></li>
+                                        <li><a href="#">Support</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom | pt-3 pb-2 d-lg-flex justify-content-md-between">
+                        <div class="footer__copyright">
+                            &copy; <a href="https://wwww.odoo.com" rel="nofollow noopener" target="_blank">Odoo</a>. All rights reserved
+                        </div>
+                        <div class="footer__legals | mt-2 mt-lg-0">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>

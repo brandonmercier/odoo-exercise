@@ -1,0 +1,138 @@
+.introduction {
+	&__title {
+		font-weight: $font-weight-bold;
+		font-size: $display1-size;
+	}
+
+	&__main-text {
+		max-width: 320px;
+	}
+
+		&__action .btn {
+			font-size: 1rem;
+		}
+
+		&__references {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+			align-items: center;
+
+			.label {
+				font-size: .8em;
+			}
+		}
+			&__references-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+				margin: 0;
+
+				img {
+					height: 26px;
+				}
+			}
+}
+
+.card-manager {
+	background: color("white");
+	border-radius: $border-radius-lg $border-radius-lg $border-radius-lg*8 $border-radius-lg;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+		&__title {
+			font-weight: $font-weight-bold;
+			color: $headings-color;
+		}
+
+		.btn-outline-light {
+			transition: $transition-base;
+			border-color: $border-color;
+
+			&:hover,
+			&focus {
+				background-color: $border-color;
+			}
+		}
+
+	&__expenses {
+		li {
+			border-bottom: $border-width solid $border-color;
+			padding: 1rem 0;
+		}
+	}
+
+		.expense {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+
+			&__title,
+			&__amount {
+				color: $headings-color;
+			}
+
+			&__title {
+				font-weight: $font-weight-normal;
+			}
+
+			&__information {
+				font-size: .8em;
+				color: gray("600");
+			}
+
+			&__amount {
+				font-size: .9em;
+			}
+		}
+
+	.readmore {
+		color: theme-color('primary');
+		border-bottom: 1px dashed theme-color('primary');
+		font-size: .8em;
+		padding-bottom: .1em;
+	}
+}
+
+	.credit-card {
+		background: color("indigo");
+		border-radius: $border-radius-lg;
+		max-width: 380px;
+
+		.label {
+			text-transform: uppercase;
+			font-size: $small-font-size;
+		}
+
+		.credit-card__line + .credit-card__line {
+			margin-top: 1.5rem;
+		}
+
+		.status {
+			@extend .badge;
+			border-radius: $border-radius-sm;
+			padding: .6em;
+		}
+
+		&__number {
+			.value {
+				font-size: 1.4em;
+			}
+		}
+
+		&__top,
+		&__bottom {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__bottom {
+			align-items: baseline;
+
+			> * { width: 50%; }
+		}
+	}

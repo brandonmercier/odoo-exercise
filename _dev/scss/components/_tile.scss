@@ -1,0 +1,181 @@
+.tile {
+	display: block;
+	padding: map-get($spacers,3);
+	overflow: hidden;
+	position: relative;
+
+	&__highlight {
+		color: $headings-color;
+		font-weight: $font-weight-semibold;
+	}
+}
+
+a.tile {
+	transition: $transition-base;
+	color: $body-color;
+
+	.btn-link.learn-more {
+		color: $headings-color;
+		transition: $transition-base;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: currentColor;
+		border-color: theme-color("primary");
+		transform: scale(1.05);
+
+		.btn-link.learn-more {
+			color: theme-color("primary");
+
+			.btn-label:after {
+				background: theme-color("primary");
+			}
+		}
+	}
+}
+
+.tile-profile {
+	padding: 0;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.tile__text {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		padding: map-get($spacers,2);
+	}
+
+	.profile {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		
+		&__placeholder {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 100%;
+			font-size: rem(14);
+			text-transform: uppercase;
+			color: white;
+			background: theme-color("secondary");
+		}
+
+		&__name {
+			font-size: rem(14);
+		}
+	}
+}
+
+.tile-download {
+	&__authors {
+		display: inline-flex;
+		align-items: center;	
+	}
+		&__author {
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 100%;
+			overflow: hidden;
+			border: 3px solid $white;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+
+			&__author + &__author {
+				margin-left: -.75rem;
+			}
+
+			[class^="bi-paperclip"] {
+				display: inline-block;
+				transform: rotate(45deg);
+			}
+}
+
+.tile-components {
+	display: flex;
+	padding: map-get($spacers,2);
+	gap: 1rem;
+	box-shadow: none;
+
+	.tile__highlight {
+		font-size: rem(15);
+	}
+
+	.checkmark {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 100%;
+		background-color: theme-color("tertiary");
+		color: white;
+		flex-shrink: 0;
+		font-size: 2em;
+	}
+}
+
+.tile-award {
+	padding: map-get($spacers,4) map-get($spacers,3);
+
+	&__logo {
+		width: auto;
+		max-height: 35px;
+	}
+
+	&__rating-description {
+		font-size: rem(18);
+	}
+
+	&__description,
+	.learn-more {
+		margin-top: map-get($spacers,2);
+	}
+}
+
+.tile-download {
+	&__picture {
+		width: 60px;
+		height: 60px;
+		border-radius: 100%;
+		overflow: hidden;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	&__actions {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background: linear-gradient(to right, rgba($white,0) 0%, $border-color 50%, rgba($white,0) 100%);
+		}
+	}
+}

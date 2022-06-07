@@ -1,0 +1,17 @@
+.checklist {
+	li {
+		position: relative;
+		margin-top: 1em;
+		padding-left: 1.5em;
+	}
+
+		&__checkbox {
+			position: absolute;
+			display: inline-flex;
+			border-radius: $border-radius-sm;
+			width: 1em;
+			height: 1em;
+			top: .25em;
+			left: 0;
+		}
+}

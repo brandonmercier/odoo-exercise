@@ -1,0 +1,33 @@
+.milestones {
+	&__title {
+		display: block;
+		color: $headings-color;
+		font-weight: $font-weight-semibold;
+		font-size: rem(22);
+		margin-bottom: 1em;
+	}
+
+	&__list {
+		li + li {
+			margin-top: map-get($spacers,4);
+		}
+	}
+}
+
+	.milestone {
+		&__text {
+			display: flex;
+			gap: $grid-gutter-width;
+			align-items: baseline;
+			justify-content: space-between;
+		}
+
+			&__title {
+				color: $headings-color;
+				font-size: rem(15);
+			}
+
+			&__progress {
+				margin-top: map-get($spacers,2);
+			}
+	}
